@@ -1,13 +1,16 @@
 package com.empmanagement;
 
 import javax.swing.*;
+import javax.swing.text.*;
 import java.awt.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.ResultSet;
 public class Login extends JFrame implements ActionListener {
 
+	JLabel lusername,lpassword;
 	JTextField tusername,tpassword;
+	JPasswordField pass;
 	
 	
 	Login(){
@@ -16,34 +19,45 @@ public class Login extends JFrame implements ActionListener {
 		setLayout(null);
 		//Adding username and its textfield
 		
-		JLabel lusername = new JLabel("Username");
+		lusername = new JLabel("Username:");
 		lusername.setBounds(40,20,100,30);
+		lusername.setFont(new Font("Roboto",Font.BOLD,20));
 		add(lusername);
 		
 		tusername = new JTextField();
 		tusername.setBounds(150,20,150,30);
+		tusername.setFont(new Font("Roboto",Font.BOLD,20));
 		add(tusername);
 		
-		JLabel lpassword = new JLabel("Password");
+		lpassword = new JLabel("Password:");
 		lpassword.setBounds(40,70,100,30);
+		lpassword.setFont(new Font("Roboto",Font.BOLD,20));
 		add(lpassword);
 		
-		tpassword = new JTextField();
-		tpassword.setBounds(150,70,150,30);
-		add(tpassword);
+//		tpassword = new JTextField();
+//		tpassword.setBounds(150,70,150,30);
+//		add(tpassword);
+		//ADDING CENSOR
+		pass = new JPasswordField();
+		pass.setBounds(150,70,150,30);
+		pass.setFont(new Font("Roboto",Font.BOLD,20));
+		add(pass);
+		
+		
 		//Adding Button
 		
-		JButton loginbutton = new JButton("Click here to login");
-		loginbutton.setBounds(150,200,150,30);
-		loginbutton.setBackground(Color.black);
-		loginbutton.setForeground(Color.red);
+		JButton loginbutton = new JButton("LOGIN");
+		loginbutton.setBounds(150,150,150,70);
+		loginbutton.setFont(new Font("Roboto",Font.BOLD,20));
+//		loginbutton.setBackground(Color.black);
+//		loginbutton.setForeground(Color.red);
 		loginbutton.addActionListener(this);
 		add(loginbutton);
 		
 		//Adding Image
 		
 		ImageIcon loginimage1 = new ImageIcon(getClass().getResource("icons/second.jpg"));
-		Image loginimage2 = loginimage1.getImage().getScaledInstance(1100, 700, Image.SCALE_DEFAULT);
+		Image loginimage2 = loginimage1.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 		ImageIcon loginimage3 = new ImageIcon(loginimage2);
 		JLabel loginimage = new JLabel(loginimage3);
 		loginimage.setBounds(350,0,200,200);
@@ -58,9 +72,11 @@ public class Login extends JFrame implements ActionListener {
 		setSize(600,400);
 		setLocation(450,200);
 		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		
 	}
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -76,7 +92,7 @@ public class Login extends JFrame implements ActionListener {
 		
 		
 			String username = tusername.getText();
-			String password = tpassword.getText();
+			String password = pass.getText();
 			ConnectionClass c = new ConnectionClass();
 			
 			String query = "select * from login where username = '"+username+"' and password = '"+password+"'";

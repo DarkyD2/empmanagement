@@ -26,12 +26,12 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		
 		heading = new JLabel("Update Employee Details");
 		heading.setBounds(350,30,500,50);// sets the boundary for the label(heading)
-		heading.setFont(new Font("serif",Font.BOLD,25));//set the font by font type , font , size
+		heading.setFont(new Font("Roboto",Font.BOLD,25));//set the font by font type , font , size
 		add(heading);
 		////NAME
-		labelname = new JLabel("Name");
+		labelname = new JLabel("Name:");
 		labelname.setBounds(50,150,150,30);// sets the boundary for the label(heading)
-		labelname.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labelname.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelname);
 		
 		JLabel lblname = new JLabel();
@@ -39,9 +39,9 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		add(lblname);
 		
 		///FATHER NAME
-		labelfname = new JLabel("Father's Name");
+		labelfname = new JLabel("Father's Name:");
 		labelfname.setBounds(400,150,150,30);// sets the boundary for the label(heading)
-		labelfname.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labelfname.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelfname);
 		
 		 lblfname = new JLabel();
@@ -49,9 +49,9 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		add(lblfname);
 		
 		///DATE
-		 labeldob = new JLabel("Date of Birth");
+		 labeldob = new JLabel("Date of Birth:");
 		labeldob.setBounds(50,200,150,30);// sets the boundary for the label(heading)
-		labeldob.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labeldob.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labeldob);
 		
 		 lblddob = new JLabel();
@@ -60,9 +60,9 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		
 		///Salary
 		
-		 labelsalary = new JLabel("Salary");
+		 labelsalary = new JLabel("Salary:");
 		labelsalary.setBounds(400,200,150,30);// sets the boundary for the label(heading)
-		labelsalary.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labelsalary.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelsalary);
 		
 		 tsalary = new JTextField();
@@ -70,18 +70,18 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		add(tsalary);
 		
 		///ADDRESS
-		 labeladdress = new JLabel("Address");
+		 labeladdress = new JLabel("Address:");
 		labeladdress.setBounds(50,250,150,30);// sets the boundary for the label(heading)
-		labeladdress.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labeladdress.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labeladdress);
 		
 		 taddress = new JTextField();
 		taddress.setBounds(200,250,150,30);// sets the boundary for the label(heading)
 		add(taddress);
 		///PHONE
-		 labelphone= new JLabel("Phone");
+		 labelphone= new JLabel("Phone:");
 		labelphone.setBounds(400,250,150,30);// sets the boundary for the label(heading)
-		labelphone.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labelphone.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelphone);
 		
 		 tphone = new JTextField();
@@ -89,9 +89,9 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		add(tphone);
 		///EMAIL
 		
-		 labelemail = new JLabel("Email");
+		 labelemail = new JLabel("Email:");
 		labelemail.setBounds(50,300,150,30);// sets the boundary for the label(heading)
-		labelemail.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labelemail.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelemail);
 		
 		 temail = new JTextField();
@@ -99,9 +99,9 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		add(temail);
 		///HIGHEST EDUCATION
 		
-		 labeleducation = new JLabel("Highest Education");
+		 labeleducation = new JLabel("Highest Education:");
 		labeleducation.setBounds(400,300,150,30);// sets the boundary for the label(heading)
-		labeleducation.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labeleducation.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labeleducation);
 		
 		tfeducation = new JTextField();
@@ -109,18 +109,18 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		add(tfeducation);
 		
 		///DESIGNATION
-		labeldesignation = new JLabel("Designation");
+		labeldesignation = new JLabel("Designation:");
 		labeldesignation.setBounds(50,350,150,30);// sets the boundary for the label(heading)
-		labeldesignation.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labeldesignation.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labeldesignation);
 		
 		 tdesignation = new JTextField();
 		tdesignation.setBounds(200,350,150,30);// sets the boundary for the label(heading)
 		add(tdesignation);
 		///PHONE
-		 labelaadhar= new JLabel("Aadhar Number");
+		 labelaadhar= new JLabel("Aadhar Number:");
 		labelaadhar.setBounds(400,350,150,30);// sets the boundary for the label(heading)
-		labelaadhar.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+		labelaadhar.setFont(new Font("Roboto",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelaadhar);
 		
 		 lblaadhar = new JLabel();
@@ -129,14 +129,14 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		
 		///EMP ID
 		
-		 labelempid= new JLabel("Employee ID");
+		 labelempid= new JLabel("Employee ID:");
 		labelempid.setBounds(50,400,150,30);// sets the boundary for the label(heading)
-		labelempid.setFont(new Font("serif",Font.BOLD,20));//set the font by font type , font , size
+		labelempid.setFont(new Font("Roboto",Font.BOLD,20));//set the font by font type , font , size
 		add(labelempid);
 		
 		 lempid= new JLabel();
 		lempid.setBounds(200,400,150,30);// sets the boundary for the label(heading)
-		lempid.setFont(new Font("serif",Font.BOLD,20));//set the font by font type , font , size
+		lempid.setFont(new Font("Roboto",Font.BOLD,20));//set the font by font type , font , size
 		add(lempid);
 		
 		try {
@@ -191,6 +191,7 @@ public class UpdateEmployee extends JFrame implements ActionListener{
 		setSize(900,700);
 		setLocation(300,50);
 		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {

@@ -174,6 +174,7 @@ public class AddEmployee extends JFrame implements ActionListener{
 		setSize(900,700);
 		setLocation(300,50);
 		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {

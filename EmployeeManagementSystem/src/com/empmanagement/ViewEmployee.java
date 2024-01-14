@@ -29,32 +29,32 @@ public class ViewEmployee extends JFrame implements ActionListener{
 
 		search = new JButton("SEARCH");
 		search.setBounds(20,70,80,20);
-		search.setBackground(Color.black);
-		search.setForeground(Color.white);
+//		search.setBackground(Color.black);
+//		search.setForeground(Color.white);
 		search.addActionListener(this);
 		add(search);
 		
 		
 		print = new JButton("PRINT");
 		print.setBounds(120,70,80,20);
-		print.setBackground(Color.black);
-		print.setForeground(Color.white);
+//		print.setBackground(Color.black);
+//		print.setForeground(Color.white);
 		print.addActionListener(this);
 		add(print);
 		
 		
 		update = new JButton("UPDATE");
-		update.setBounds(220,70,80,20);
-		update.setBackground(Color.black);
-		update.setForeground(Color.white);
+		update.setBounds(220,70,84,20);
+//		update.setBackground(Color.black);
+//		update.setForeground(Color.white);
 		update.addActionListener(this);
 		add(update);
 		
 		
 		back = new JButton("BACK");
 		back.setBounds(320,70,80,20);
-		back.setBackground(Color.black);
-		back.setForeground(Color.white);
+//		back.setBackground(Color.black);
+//		back.setForeground(Color.white);
 		back.addActionListener(this);
 		add(back);
 		
@@ -95,6 +95,7 @@ public class ViewEmployee extends JFrame implements ActionListener{
 		setSize(900,700);
 		setLocation(300,100);
 		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 	}
 	

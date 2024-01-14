@@ -22,39 +22,47 @@ public class RemoveEmployee extends JFrame implements ActionListener{
 		getContentPane().setBackground(Color.white);
 		setLayout(null);
 		
-		labelempid = new JLabel("Emp ID");
+		labelempid = new JLabel("Emp ID:");
+		labelempid.setFont(new Font("Roboto",Font.BOLD,20));
 		labelempid.setBounds(50,50,100,30);
 		add(labelempid);
 		
 		cempid = new Choice();
 		cempid.setBounds(200,50,150,30);
+		cempid.setFont(new Font("Roboto",Font.BOLD,20));
 		add(cempid);
 		
 		
-		labelname = new JLabel("Name");
+		labelname = new JLabel("Name:");
+		labelname.setFont(new Font("Roboto",Font.BOLD,20));
 		labelname.setBounds(50,100,150,30);// sets the boundary for the label(heading)
-		labelname.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+//		labelname.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelname);
 		
 		lblname = new JLabel();
-		lblname.setBounds(200,100,150,30);// sets the boundary for the label(heading)
+		lblname.setBounds(200,100,150,30);
+		lblname.setFont(new Font("Roboto",Font.BOLD,20));// sets the boundary for the label(heading)
 		add(lblname);
 		
-		labelphone= new JLabel("Phone");
+		labelphone= new JLabel("Phone:");
+		labelphone.setFont(new Font("Roboto",Font.BOLD,20));
 		labelphone.setBounds(50,150,150,30);// sets the boundary for the label(heading)
-		labelphone.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+//		labelphone.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelphone);
 			
 		lblphone= new JLabel();
+		lblphone.setFont(new Font("Roboto",Font.BOLD,20));
 		lblphone.setBounds(200,150,150,30);// sets the boundary for the label(heading)
 		add(lblphone);
 			
-		labelemail = new JLabel("Email");
+		labelemail = new JLabel("Email:");
+		labelemail.setFont(new Font("Roboto",Font.BOLD,20));
 		labelemail.setBounds(50,200,150,30);// sets the boundary for the label(heading)
-		labelemail.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
+//		labelemail.setFont(new Font("serif",Font.PLAIN,20));//set the font by font type , font , size
 		add(labelemail);
 				
 		lblemail = new JLabel();
+		lblemail.setFont(new Font("Roboto",Font.BOLD,20));
 		lblemail.setBounds(200,200,150,30);// sets the boundary for the label(heading)
 		add(lblemail);
 		
@@ -103,24 +111,28 @@ public class RemoveEmployee extends JFrame implements ActionListener{
 		});
 		
 		delete = new JButton("DELETE");
-		delete.setBounds(220,300,100,30);
-		delete.setBackground(Color.black);
-		delete.setForeground(Color.red);
+		delete.setBounds(50,300,100,50);
+		delete.setFont(new Font("Roboto",Font.BOLD,10));
+//		delete.setBackground(Color.black);
+//		delete.setForeground(Color.red);
 		delete.addActionListener(this);
 		add(delete);
 		
 		back = new JButton("BACK");
-		back.setBounds(400,300,100,30);
-		back.setBackground(Color.black);
-		back.setForeground(Color.red);
+		back.setFont(new Font("Roboto",Font.BOLD,10));
+		back.setBounds(200,300,100,50);
+//		back.setBackground(Color.black);
+//		back.setForeground(Color.red);
 		back.addActionListener(this);
 		add(back);
 		
 		
-		
-		setSize(1000,800);
-		setLocation(350,200);
+		setSize(700,500);
+		setLocation(350,250);
+//		setSize(1000,800);
+//		setLocation(350,200);
 		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
 	public static void main(String[] args) {
